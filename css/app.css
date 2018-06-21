@@ -1,0 +1,70 @@
+:root {
+    --gray: #f8f8f8;
+    --content-font: 'Source Serif Pro', serif;
+    --heading-font: 'Oswald', sans-serif;
+    --base-padding: 1rem;
+    --base-shadow: 0 0 4px 0 rgba(0,0,0,.21);
+    --base-radius: 10px;
+}
+body{
+    background: var(--gray);
+    font-family:  var(--content-font);
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0
+}
+.container{
+    max-width: 40rem;
+    margin: 3rem auto;
+}
+.title{
+    background: var(--gray);
+    font-family:  var(--heading-font);
+    padding: var(--base-padding);
+    margin-top: 0;
+}
+.card{
+    color: #646464;
+    background-color: #fff;
+    border-radius: var(--base-radius);
+    box-shadow: var(--base-shadow);
+    padding: var(--base-padding);
+    margin-bottom: 1rem
+}
+
+.px{
+    padding-left: var(--base-padding);
+    padding-right: var(--base-padding);
+}
+.connect,
+.form-container{ display: flex}
+
+.connect p{
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.form-container{
+    background: var(--gray);
+}
+.form-container input[type='email'],
+.form-container input[type='submit']{
+    box-shadow: 1px 3px 4px #ddd
+}
+.form-container input[type='email']{
+    width: 100%;
+}
+.form-container input[type='submit']{
+    width: 20%;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.form-container,
+.form-container input[type='email']{
+    padding: .75rem
+}
+.separator,
+.form-container input[type='email'],
+.form-container input[type='submit']{ border: 1px solid #f2f2f2; }
